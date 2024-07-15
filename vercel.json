@@ -13,6 +13,18 @@
             "dest": "/public/build/"
         },
         {
+            "src": "/(css|js)/(.*)",
+            "dest": "/public/$1/$2"
+        },
+        {
+            "src": "/images/(.*)",
+            "dest": "/public/images/"
+        },
+        {
+            "src": "/favicon/(.*)",
+            "dest": "/public/favicon/"
+        },
+        {
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
